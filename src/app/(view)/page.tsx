@@ -26,10 +26,10 @@ export default function Home() {
         />
         {/* <img alt='Banner' className='h-auto w-full' /> */}
         <div className='absolute bottom-0 left-0 right-0 top-0 flex flex-col items-center justify-center bg-black bg-opacity-0'>
-          <h2 className='text-yellow mb-4 text-2xl font-[500]'>
+          {/*  <h2 className='text-yellow mb-4 text-2xl font-[500]'>
             Regalos personalizados y publicitarios para ti o tu empresa
             <strong> Para ti o tu empresa</strong>
-          </h2>
+          </h2> */}
           <a
             href='#'
             className='rounded bg-blue-500 px-4 py-2 text-lg text-white transition duration-300 hover:bg-blue-700'

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image1 from '../../../public/absctract.jpg'
 import SvgIconStar from './icon/StarIconSvg';
 const CardsProducts = ({ id, title, tagline, image }: any) => {
-    console.log(image, id, tagline);
+
     const numIcons = 5
     return (
         <div

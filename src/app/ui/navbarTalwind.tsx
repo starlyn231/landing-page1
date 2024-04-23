@@ -1,10 +1,11 @@
-"use client"
+"use client";
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { AcmeLogo } from "./icon/AcmeLogo.jsx";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
+    console.log(isOpen)
     return (
         <nav className="bg-white text-[#454545] uppercase">
             <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">

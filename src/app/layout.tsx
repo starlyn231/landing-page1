@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Providers } from "../../providers";
 import "./globals.css";
-import Announcemenet from './ui/announcemenet';
-
-import NavbarMain from "./ui/navbar";
-import Navbar from "./ui/navbarTalwind";
+import { lato } from './util/fonts';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,13 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/*     <Providers> */}
-      <Announcemenet />
-      <Navbar />
-      <div className="flex h-screen flex-col">
-        {children}
-      </div>
-      {/*    </Providers> */}
+      <Providers>
+        <body className={lato.className}>{children}</body>
+      </Providers>
     </html>
   );
 }
